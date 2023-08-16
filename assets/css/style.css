@@ -1,0 +1,232 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(51, 51, 51);
+    z-index: 999;
+}
+.ulnav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px 0;
+    list-style: none;
+}
+.first-nav,.second-nav{
+    display: flex;
+}
+.first-nav li ,.second-nav li {
+    padding: 0px 15px;
+    margin: 5px 0px;
+}
+.ulnav li a,.ulnav1 li a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero{
+    width: 100%;
+    background-repeat: no-repeat;
+    height: calc(100% - 47px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.company{
+    width: 100%;
+    height: 100%;
+}
+.hero h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(95, 129, 166, 50%);
+    color: white;
+}
+.AboutUs,.OurServices,.Specialization,.OurTeachers,.Plans,.ContactUs{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    padding: 50px 0px;
+}
+.AboutUs p{
+    padding: 0px 100px;
+}
+.ContactUs{
+    height: max-content;
+}
+.OurServices ul li,.Specialization ul li,.OurTeachers ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+.OurServices ul,.Specialization ul,.OurTeachers ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.OurServices,.OurTeachers,.ContactUs{ 
+    background-color: rgb(252, 212, 190);
+}
+.pli{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+.card1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 0;
+}
+.card1 img{
+    width: 167px;
+}
+.imgandhead img{
+    width: 300px;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.carda{
+    background-color: rgb(245, 222, 179);
+    width: 340px;
+    height: 500px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.imgandhead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+}
+.carda ul{
+    padding: 0 30px;
+}
+.container{
+    margin: 21px;
+    padding: 10px;
+    width: 300px;
+    height: 90px;
+    background-color: rgb(253, 233, 140);
+    border-radius: 10px;
+    border: 2px solid rgb(255, 215, 0);
+}
+.box1{
+    background-color: rgb(252, 212, 190);
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+.ContactUs .box1 h1,.ContactInfo h1,.AboutUs h1 ,.Plans h1{
+    padding-bottom: 20px;
+}
+.child-box6{
+    display: flex;
+    flex-direction: column;
+}
+.emailandtext,#textarea{
+    width: 500px;
+    height: 25px;
+}
+.sendmassage{
+    width: 200px;
+    height: 35px;
+    background-color: rgb(51, 51,51);
+    color: white;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.ContactInfo{
+    width: 100%;
+    height: max-content;
+    background-color: rgb(252, 208, 185);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0px;
+}
+.ContactInfo div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ulnav1{
+    width: 100%;
+    height: 47px;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    list-style: none;
+    gap: 25px;
+}
+h1,h2{
+    padding: 0px 90px;
+}
+.hero h1{
+    padding: 0px;
+}
+
+@media screen and (max-width:900px) {
+    .emailandtext,#textarea{
+        width: 280px;
+    }
+    .carda{
+        width: 280px;
+        height: 480px;
+    }
+    .imgandhead img{
+        width: 260px;
+    }
+    .imgandhead h2{
+        padding: 0px;
+    }
+    .container{
+        width:240px;
+    }
+    .hero h1{
+        max-width: max-content;
+        font-size: 1.5rem;
+
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    .ulnav{
+        padding: 15px 0px;
+    }
+}
