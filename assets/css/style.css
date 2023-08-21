@@ -64,7 +64,8 @@ nav{
     padding: 50px 0px;
 }
 .AboutUs p{
-    padding: 0px 100px;
+    width: 80vw;
+    text-align: center;
 }
 .ContactUs{
     height: max-content;
@@ -76,6 +77,7 @@ nav{
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
+    text-align: center;
 }
 .OurServices ul,.Specialization ul,.OurTeachers ul{
     display: flex;
@@ -105,14 +107,15 @@ nav{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 40px 0px;
+    gap: 10px;
 }
 .carda{
     background-color: rgb(245, 222, 179);
     width: 340px;
     height: 500px;
     border-radius: 15px;
-    margin: 10px;
+    margin: 10px 0px;
 }
 .imgandhead{
     display: flex;
@@ -199,27 +202,32 @@ nav{
         width: 260px;
     }
     .carda{
-        width: 265px;
-        height: 440px;
+        width: 255px;
+        height: 430px;
     }
     .imgandhead img{
-        width: 245px;
+        width: 235px;
     }
     .imgandhead h3{
         padding: 0px;
     }
     .container{
-        width:225px;
+        width: 215px;
     }
     .hero h1{
         max-width: max-content;
-        font-size: 1.5rem;
-
+        font-size: 1.2rem;
     }
     .ulnav{
         padding: 15px 0px;
     }
     .first-nav li ,.second-nav li {
         padding: 0px 4px;
+    }
+    .ulnav li a,.ulnav1 li a{
+        font-size: 0.8rem;
+    }
+    .box{
+        gap: 0px;
     }
 }
